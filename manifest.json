@@ -1,21 +1,21 @@
 {
-  "name": "Hangout Forever",
+  "name": "VIF",
   "version": "1.0.0",
   "manifest_version": 2,
-  "description": "Keep hanging out without being asked \"Are you still there?\"",
-  "homepage_url": "http://github.com/ChristianBundy/hangout-forever",
+  "description": "Because GIF sucks.",
+  "homepage_url": "http://github.com/ChristianBundy/vif",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
   "permissions": [
-    "https://plus.google.com/hangouts/_/*"
+    "http://*/"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://plus.google.com/hangouts/_/*"
+        "<all_urls>"
       ],
       "js": [
         "src/inject/inject.js"
